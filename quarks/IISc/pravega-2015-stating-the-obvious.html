@@ -1,0 +1,328 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pravega 2015 - Stating the Obvious</title>
+		<base href="../../">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="css/custom.css" type="text/css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+		<style type="text/css">
+			.bg-image {
+
+			}
+		</style>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-103008914-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+
+<body>
+
+
+<!-- In-Section Navigation Begins -->
+	<nav class="navbar navbar-inverse" style="overflow:hidden;">
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand" href="quarks/index.html" style="margin-left:50px;">
+				<img id="header-logo" src="images/quarks-icon.png" alt="Quarks Logo">
+			</a>
+		</div>
+	
+		<div class="collapse navbar-collapse" id="nav1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="quarks/Art/index.html">Art</a>					
+				</li>
+				<li>
+					<a href="quarks/IISc/index.html">IISc</a>					
+				</li>
+				<li>
+					<a href="quarks/Non-IISc/index.html">Non-IISc</a>					
+				</li>
+				<li>
+					<a href="quarks/Interviews/index.html">Interviews</a>					
+				</li>
+				<li>
+					<a href="quarks/Photography/index.html">Photography</a>					
+				</li>
+				<li>
+					<a href="quarks/Poems and Stories/index.html">Poems and Stories</a>					
+				</li>
+				<li>
+					<a href="quarks/Other Languages/index.html">Other Languages</a>					
+				</li>
+			</ul>
+		</div>
+	</nav>
+<!-- In-Section Navigation Ends -->
+
+
+
+
+
+<!-- Hexagonal Navigation Panel-->
+	<div id="nav-icon1" class="nav-icon1">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div id = "banner" class="banner"></div>
+	<div id = "hexcontainer" class="hexcontainer">
+		<div class="hex-row center">
+			<div class="hex">
+				
+				<div class="top" ></div>
+				<div class="middle" ><div class="text">Clubs</div>
+				<div class="icon"><img src="images/Clubs & Societies Icon.png" class="img-size"/></div></div>
+				<div class="bottom"></div>  
+			</div>
+			<div class="hex">
+				
+				<div class="top" style="border-bottom-color:#FFD422"></div>
+				<div class="middle" style="background:#FFD422"><div class="text">About Us</div>
+				<div class="icon"><img src="images/About Us Icon.png" class="img-size"/></div></div>
+				<div class="bottom" style="border-top-color:#FFD422"></div>
+			</div>
+		</div>
+
+		<div class="hex-row">
+			<div class="hex">
+				
+				
+				<div class="top" style="border-bottom-color:#ffd6a5"></div>
+				<div class="middle" style="background:#ffd6a5"><div class="text">Gallery</div><div class="icon">
+				<img src="images/Gallery Icon.png" class="img-size"></div></div>
+				<div class="bottom" style="border-top-color:#ffd6a5"></div>
+			</div>
+			<div class="hex" >
+				<div class="hexagon hexagon1">
+				<div class="hexagon-in1"><div class="hexagon-in2"></div></div>
+				</div>
+			</div>
+			<div class="hex">
+				
+				
+				<div class="top" style="border-bottom-color:#4FADB2"></div>
+				<div class="middle" style="background:#4FADB2"><div class="text">Activities</div><div class="icon"><img src="images/Activities Icon.png" class="img-size"/></div></div>
+				<div class="bottom" style="border-top-color:#4FADB2"></div>  
+			</div>
+		</div>
+		<div class="hex-row center">
+			<div class="hex">
+				
+				
+				<div class="top" style="border-bottom-color:#0810FF"></div>
+				<div class="middle" style="background:#0810FF"><div class="text">Academics</div><div class="icon"><img src="images/Academics Icon.png" class="img-size"/></div></div>
+				<div class="bottom" style="border-top-color:#0810FF"></div>  
+			</div>
+			<div class="hex">
+				<div class="top" style="border-bottom-color:#B22100"></div>
+				<div class="middle" style="background:#B22100"><div class="text">Quarks</div><div class="icon"><img src="images/quarks-icon.png" class="img-size"/></div></div>
+				<div class="bottom" style="border-top-color:#B22100"></div>
+			</div>
+		</div>
+	</div>
+<!--Navigation Panel Ends-->
+
+
+
+
+<!-- Main content section starts here -->
+	<div id="container-main">
+		<div class="content-card">
+			<div class="header bg-image">
+				<div class="header-heading">
+					Pravega 2015 - Stating the Obvious
+				</div>
+				<div class="header-byline">
+				<span class="glyphicon glyphicon-user"></span> Ishan Agarwal | <span class="glyphicon glyphicon-user"></span> Sayantan Khan |&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar"></span> August 2016
+				</div>
+			</div>
+			<div class="content">
+				<p>
+					Pravega, the IISc undergrad festival, has been a presence in the undergrads’ calendar since its inception in 2014. And not unlike other colleges, a lot of IISc undergrads have amalgamated the idea of Pravega as part of their identity. When people internalize a foreign notion as part of their identity, they often fail to see the notion objectively and make unbiased judgements and decisions regarding that notion. Furthermore, they take valid criticisms about the notion to be criticisms of their identity, which is exactly the wrong way to go about it. This is precisely what has happened with the idea of Pravega, and as a result, a lot of open dialogue regarding Pravega has either been avoided, or swept under the rug. There has been some exposition in the past, in particular an article re-examining the reasons validating Pravega’s existence did appear in the previous edition of Quarks. However, it appeared as a two page article, immediately following massive coverage of Pravega spanning multiple pages. The trend was quite evident; a growing minority of people at IISc recognized the malady ailing Pravega, but when they spoke out, their voice was drowned in majority’s indiﬀerence or ignorance of the issue.
+
+				</p>
+
+				<p>
+					Another point the article in question made was the contribution a fest is supposed to make to its immediate environment, which in this case is the urban community surrounding IISc. The success of Pravega at achieving this ideal is a questionable notion at best. True, it does organize certain events that contribute back to the society, e.g. quizzes and the like. But most of the events were rather insulated in nature, for example the fashion show and the DJ nights. The fact that the latter events comprise a major chunk of Pravega’s budget is somewhat disconcerting. The event that comes closest to the idea of contributing back to the community and inculcating the scientific spirit would in fact be Open Day. If anything, Open Day is the closest thing IISc has to a science and tech fest.
+				</p>
+
+				<p>
+					The article in question objected to Pravega, in its current form, on a purely philosophical basis. It argued that Pravega strove to establish its identity as the “science, technology and cultural festival” of IISc. However, Pravega fails to truly be a science fest, one of its failures being an incapability to inculcate the scientific spirit in the attendees, among other things. A lot of people also work for Pravega just to make it popular, and to paraphrase the article in question, popularity is not an end in itself, but a byproduct of a novel idea. A fest, however, is not just a means to popularize a college/programme, nor is it merely an opportunity for a break from academics. There must be some intrinsic worth involved in any such endeavor and the contribution of Pravega to life as an undergraduate at IISc must not be neglected. Certainly, in a college that is fundamentally research and hence academics centric, a fest does provide an opportunity for the students to hone other skills that may well prove equally important to them in the future. The ability to organize an event of any significant scale can only be developed when such an organizational task is actually thrust upon one’s shoulders. Furthermore Pravega provides an opportunity for the students to try their hands at things like publicity, finding sponsors, managing large groups of people so that they can coordinate their efforts, and in general dealing with all the challenges inherent in any large scale organizational task.
+				</p>
+				<p>
+					Furthermore, the argument that Pravega promotes teamwork and allows all of the students to work together better, is not entirely without merit. Seniors and juniors get to know each other better by working together for Pravega. While sometimes being ‘forced’ to work with others can lead to acrimony, it is also important to learn how to resolve differences of opinion and work with a diverse set of people towards a common goal. It is also true that as an undergraduate at IISc there are hardly any other chances to either gain such organizational skills, or even have a chance to work with such a large group of people. While there are numerous projects as part of courses and these often involve groups, the harsh reality is that we always end up working with our friends when it comes to such group endeavors. While this is not necessarily a bad thing, people rarely get out of their comfort zone when it comes to working in teams with other people.
+				</p>
+				<p>
+					While it might well be a praiseworthy exercise to provide the students a platform to hone a wide variety of organizational skills, one thing that the organizers have failed to realize, year after year, is that quality is not to be equated with quantity. There is an unhealthy obsession with making Pravega bigger instead of better. At one of the initial GBMs of last year’s Pravega, the volunteers were all being exhorted to help be part of a fest that was going to be ‘big’. This is not merely nitpicking over words. The whole motto of Pravega sometimes seemed to be just: ‘be bigger than last year’. This ridiculous fundamental aim shows itself in a blind rush to have the same or similar events as the previous year but only with more prize money and participants. The result of this mad rush to make Pravega, bigger and bigger is that the organizers bite off more than they can chew. The ambitions of the organizers, however, outweigh their capabilities (and by this the authors don’t mean that the organizers are incompetent, just that there aren’t sufficiently many people to organize the event. The fact that the event eventually goes through is hence a testament to the capabilities of the organizers and volunteers who often end up abysmally overworked).The fest needs to be developed keeping in mind that the number of volunteers is limited and that UG community has a group of genuinely talented people who should be used to make new innovative events and not just to increase, indiscriminately, the number of participants.
+				</p>
+				<p> 
+					While there is nothing wrong with the organizers proudly proclaiming the number of people coming to attend the fest, it does sound unseemly when one is forced to admit that this number is the only thing that people seem to be running after. There is no in depth analysis of why events have been successful or why they were unpopular. In fact the very definition of success has become anything that attracts a lot of people or any thing that involves a lot of money. It’s up to the UG community to decide what comes first: making Pravega a genuinely good fest, or making it big and flashy.
+				</p>
+				<p> 
+					It is also a much regretted, yet essential, duty of the writers of this critique to point that while a lot of the difficulties in organizing the fest are simply because we insist on making it too big for our own good, a lot of problems also arise due to the fact that some of the organizers and volunteers do not put the goal of making the fest as good as possible, before their own personal interests. There is plenty of time and energy spent by certain people merely on undermining the position of others. One could also argue that many decisions are made by organizers to further their own personal popularity or benefit themselves and their friends. It is not unheard of for merchandise to even go missing outright. The writers have seen such incidents first-hand and this is corroborated by sources who shall remain anonymous. The lack of people speaking out about such discrepancies and the lack of people in positions of authority who are willing to take firm steps have aggravated the problem severely. Fundamentally this points to a much deeper problem: that, out of the people working for the fest, a large fraction does not have any strong desire to help make the fest better. For those students it seems that the primary reason to become a part of Pravega is to further their own interests, whether those be to gain popularity, get freebies, benefit those close to them or even if it is as innocuous as finding something to put on their CV’s. The result of this is that the motivation of others is severely dampened and many capable people hesitate to contribute in significant positions because they know the work culture that has become associated with Pravega: that of work being secondary and getting a free pass and taking advantage of the position primary. It is a sad state where you find a large crowd of people all over the campus self-declared to be ‘working for Pravega’ and one is forced to wonder how many of them actually are, and how many are just looking out for their own selfish interests.
+				</p>
+				<p> 
+					While it is undeniable that there are many committed volunteers, the presence of just a few people is sufficient to tar the perception of all those working for the fest with the same negative brush.
+				</p>
+				<p> 
+					There are also quite a few problems with the way the organization is structured. For example, not enough freedom was given to the subject teams. In many cases they were given instructions as to the difficulty and number of questions for some event and asked to work to these specifications. Perhaps, the core committee should not interfere so much with details of events. In fact why not give teams an idea of the space and budget constraints and let them design events. The core committee would certainly have some discretion as to what events would be feasible, keeping in mind that they would have a picture of the fest as a whole. However it seems that the events to be held were just decided by a select number of people and that the volunteers in the teams for these events were often left feeling that they had no say in the events they were working for. Also there have been cases of event coordinators suddenly being made to work on finding and dealing with sponsors for other events, which was explicitly not one of their responsibilities. Events should be chosen keeping many factors in mind. Popularity is certainly one of them but the tastes and interests of the volunteers as well as feasibility should not be neglected. A lot of money was spent last year on bands like Agnee and on organizing the fashion show. However, many felt that the money could have much better been spent elsewhere. For example, an event coordinator was told a certain event would not occur unless the prize money could be found from some other source, because the funds were diverted away during the last few days for paying the band. The fashion show in particular was subject to widespread criticism. While there is no reason not to have an event just because it is unrelated to science, IISc is ultimately an institute devoted to science and there is nothing wrong with playing to our strengths. If the fest is to carve out a niche for itself it can do so by having good well thought out events, both technical and cultural, not by blindly copying what every other fest in the country is doing.
+				</p>
+				<p> 
+					Another question that we should ask ourselves regarding the sponsors is whether the ends justify the means. This time there was a lot of resentment among volunteers for Pravega’s main science quiz because Narayana (a cram school which prepares students for JEE) was a sponsor. Much of this was due to outrageous demands: such as giving them the prelims papers days in advance, and due to pressures for setting a substandard question paper. Conducting prelims at only the Narayana centers led to a large bias in the participants and the quality of the quiz in terms of content was far from acceptable. If Pravega is, at least to some degree, supposed to build the brand of the Undergraduate Programme, should the organizers not come up with more innovative events and find more suitable sponsors for them? It might be difficult to find sponsors more in line with the image one would want the brand to have but is it not a worthwhile investment of time and effort?
+				</p>
+
+				<p> 
+					Ultimately the reasons for the problems with Pravega boil down to some simple facts. We are trying to make the fest as big as possible forgetting all else. We do not have a large enough workforce of committed people. This in turn is largely because of the restrictive style of managing the volunteers and the lack of focus on innovation and efficiency, as well as a poor work culture which deters capable people from working for the fest. To add to the trouble a significant number of people try to use Pravega as a means to their own ends. Lastly there is a lack of thought about what we want the fest to be like and how to design and hold events that would further these aims. Only if we work towards mitigating these problems can Pravega start to become more successful.
+				</p>
+			</div>
+		</div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 bootfix">
+			<a href="quarks/IISc/a-space-of-ones-own.html" class="content-card">
+				<div class="content"> 
+					<div class="signboard-content">
+						&lt;&nbsp;&nbsp;A Space of One's Own
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 bootfix">
+			<a href="quarks/IISc/teaching-humanities-at-iisc.html" class="content-card">
+				<div class="content"> 
+					<div class="signboard-content">
+					Teaching Humanities&nbsp;&nbsp;&gt;
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bootfix">
+			<div class="content-card">
+				<div class="header">
+					<div class="header-subheading sectioner">
+					Interviews
+					</div>
+				</div>
+			</div>
+			<div class="content-card">
+				<div class="content">
+					<div class="header-subheading left">
+						Conversation with Prof. Uday Balakrishnan<br>
+						<div class="small-text">
+						<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Unknown |&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar"></span> August 2016
+						</div>
+					</div>
+						<p>
+							An interview with Prof. Uday Balakrishnan, who teaches the third year course "Intro to Governance". Know his views and what he thinks about humanities as a subject in the UG department.<a href="quarks/Interviews/conversation-with-prof-uday-balakrishnan.html"><span></span></a>
+						</p>
+				</div>
+			</div>
+			<div class="content-card">
+				<div class="content">
+					<div class="header-subheading left">
+						Getting to know SV Srinivas<br>
+						<div class="small-text">
+						<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Unknown |&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar"></span> August 2016
+						</div>
+					</div>
+						<p>
+							Professor S.V. Srinivas taught the “Ways of Seeing” and the “Ways of Knowing” course for the batches until the class of 2018.<a href="quarks/Interviews/getting-to-know-sv-srinivas.html"><span></span></a>
+						</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bootfix">
+			<div class="content-card">
+				<div class="header">
+					<div class="header-subheading sectioner">
+					Non-IISc
+					</div>
+				</div>
+			</div>
+			<div class="content-card">
+				<div class="content">
+					<div class="header-subheading left">
+						Manga<br>
+						<div class="small-text">
+						<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Unknown |&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar"></span> August 2016
+						</div>
+					</div>
+						<p>
+							Evolution of Manga along the lines of history and the effects of the second world war on the extremely popular culture.<a href="quarks/Non-IISc/manga.html"><span></span></a>
+						</p>
+				</div>
+			</div>
+			<div class="content-card">
+				<div class="content">
+					<div class="header-subheading left">
+						Viva la Vida<br>
+						<div class="small-text">
+						<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Unknown |&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar"></span> August 2016
+						</div>
+					</div>
+					<p>
+						Going by my likes and dislikes in general, a city would be an embodiment of everything I am ardently against. They’re chaotic and unruly, and there’s far too much happening for my tiny human brain to keep track of, let alone comprehend. Keeping that in mind, I’ve always wondered why I’m particularly drawn to large cities.<a href="quarks/Non-IISc/viva-la-vida.html"><span></span></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Main Content ends -->
+
+
+
+<!-- Scripts begin-->
+<!--script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script-->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".nav-icon1").click(
+			function() {
+				$('.hexcontainer').fadeToggle(250);
+				$('.banner').fadeToggle(250);
+				$("#nav-icon1").toggleClass('open');
+			}
+		)
+		$(".banner").click(
+			function() {
+				$('.hexcontainer').fadeToggle(250);
+				$('.banner').fadeToggle(250);
+				$("#nav-icon1").toggleClass('open');
+			}
+		)
+	});
+	
+	// shorten content on card
+	$(".content").shorten({
+		showChars: 500,
+		moreText: '<p>continue reading</p>',
+		lessText: 'done reading'
+	});
+	
+	if ($('body').width()<767) {
+		$('.ham').css('margin-left','-5px');
+		$(".ham").html('<span class="glyphicon glyphicon-menu-hamburger"></span>');
+	};
+</script>
+<!-- Scripts end -->
+
+
+
+</body>
+</html>

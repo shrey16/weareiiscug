@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+		<link href="css/home.css" type="text/css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="layer1" class="background">
+		</div>
+		
+		<div id="layer2" class="background">
+		</div>
+		
+		<div id="layer3" class="background">
+		</div>
+		
+		<div id="layer4" class="background">
+		</div>
+		
+		<div id="banner"> Welcome to this website! </div>
+		
+		<script>
+			$(document).ready(function(){
+				$("#layer1").fadeIn(2000);
+				$("#layer4").delay(1500).fadeIn(2000);
+				$("#layer3").delay(2500).fadeIn(2000);
+				$("#layer2").delay(3500).fadeIn(2000);
+			});
+		</script>
+	</body>
+</html>

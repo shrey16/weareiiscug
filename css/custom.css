@@ -1,0 +1,518 @@
+/*Imports*/
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+/* CSS Document */
+
+body {
+	font-family: Arial, "Helvetica-Normal", "sans-serif";
+	font-size: 1.3em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	line-height: 1.55;
+	text-align: justify;
+	background-image: url(../images/background.jpg);
+	background-attachment: fixed;
+	background-color: #F2F2F2;
+	padding:70px 0 30px;
+}
+
+.navbar {
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:10999;
+	border-radius: 0;
+}
+
+@media only screen and (min-width:768px) and (max-width:925px) {
+	.navbar-collapse ul {
+		margin: 0 auto;
+	}
+}
+
+
+#header-logo {
+	margin-top:-50px;
+}
+
+
+/* HEXAGONAL NAVIGATION CSS*/
+.hexcontainer {
+	position:fixed;
+	width:auto;
+	height:auto;
+	display:none;
+	margin-right:-330px;
+	margin-top:-300px;
+	z-index:100;
+	top:50%;
+	right:50%;
+}
+
+.nav-icon1 {
+  width: 30px;
+  height: 30px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:11000;
+  margin-top:10px;
+  margin-left:10px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background:#7C7C7C;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 12px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 24px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 12px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 12px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+#banner{
+	position: fixed;
+	height: 200%;
+	top:0;
+	width: 100%;
+	z-index: 10;
+	display: none;
+	background: rgba(0,0,0,0.8);
+}
+
+.hex{
+	float:left;
+	height:232px;
+	width:200px;
+	margin-bottom:-53px;
+	margin-left:5px;
+	cursor:pointer;
+}
+
+.hex:hover .icon{
+	-moz-animation:movetobottom 300ms infinite;
+	-ms-animation:movetobottom 300ms infinite;
+	-webkit-animation:movetobottom 300ms infinite;
+	animation: movetobottom 300ms infinite;
+}
+
+.hex:hover .text{
+	animation: moveFromTop 300ms ease-in-out;
+	-moz-animation:moveFromTop 300ms ease-in-out;
+	-ms-animation:moveFromTop 300ms ease-in-out;
+	-webkit-animation:moveFromTop 300ms ease-in-out;
+	display:block;
+}
+
+.hex .top{
+	border-bottom:58px solid #00B273;
+	border-left:100px solid transparent;
+	border-right:100px solid transparent;
+	width:0;
+	visibility:visible;
+}
+
+.hex .middle{
+	background:#00B273;
+	height:116px;
+	width:200px;
+	visibility:visible;
+}
+
+.hex .bottom{
+	border-left:100px solid transparent;
+	border-right:100px solid transparent;
+	border-top:58px solid #00B273;
+	width:0;
+	visibility:visible;
+}
+
+.center{
+	margin-left:103px;
+}
+
+.hex-row {
+	clear:left;
+}
+
+.icon{
+	margin:0;
+	position:absolute;
+}
+
+.text{
+	color:#fff;
+	display:none;
+	font-size:18px;
+	margin:50px 0 0 45px;
+	position:absolute;
+	text-align:center;
+	width:104px;
+}
+
+.hexagon{
+	-moz-transform:rotate(120deg);
+	-o-transform:rotate(120deg);
+	-webkit-transform:rotate(120deg);
+	cursor:pointer;overflow:hidden;
+	transform:rotate(120deg);
+	visibility:hidden;
+}
+
+.hexagon-in1{
+	-moz-transform:rotate(-60deg);
+	-o-transform:rotate(-60deg);
+	-webkit-transform:rotate(-60deg);
+	height:100%;overflow:hidden;
+	transform:rotate(-60deg);
+	width:100%;
+}
+
+.hexagon-in2{
+	-moz-transform:rotate(-60deg);
+	-o-transform:rotate(-60deg);
+	-webkit-transform:rotate(-60deg);
+	background-image:url(../images/IISc%20Logo%20Image.png);
+	background-position:50%;
+	background-repeat:no-repeat;
+	height:100%;
+	transform:rotate(-60deg);
+	visibility:visible;
+	width:100%;
+}
+
+.hexagon1{
+	height:232px;
+	width:200px;
+}
+
+.img-size{
+	height:116;
+	width:200;
+}
+
+
+@-webkit-keyframes moveFromTop {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-200%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-moz-keyframes moveFromTop {
+   from {
+        opacity: 0;
+        -webkit-transform: translateY(-200%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-ms-keyframes moveFromTop {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-200%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+@-webkit-keyframes movetobottom {
+    from {
+        opacity: 0;
+        -moz-transform: translateY(0%);
+    }
+    to {
+        opacity: 0;
+        -moz-transform: translateY(0%);
+    }
+}
+@-moz-keyframes movetobottom {
+      from {
+        opacity: 0;
+        -moz-transform: translateY(0%);
+    }
+    to {
+        opacity: 0;
+        -moz-transform: translateY(0%);
+    }
+}
+@-ms-keyframes movetobottom {
+       from {
+        opacity: 0;
+        -moz-transform: translateY(0%);
+    }
+    to {
+        opacity: 0;
+        -moz-transform: translateY(0%);
+    }
+}
+/* Changes made by me*/
+@media only screen and (max-width: 768px) {
+    .hexcontainer {
+		position:fixed;
+		width:auto;
+		height:auto;
+		display:none;
+		right:50%;
+		margin-right:-160px;
+		top:50%;
+		margin-top:-154px;
+	}
+	.hex{
+		float:left;
+		height:120px;
+		width:104px;
+		margin-bottom:-26px;
+		margin-left:5px;
+		overflow:hidden;
+		cursor:pointer;
+	}
+	.hex .top{
+		border-bottom:30px solid #00B273;
+		border-left:52px solid transparent;
+		border-right:52px solid transparent;
+		width:0;
+	}
+	.hex .middle{
+		height:60px;
+		width:104px;
+	}
+	.hex .bottom{
+		border-left:52px solid transparent;
+		border-right:52px solid transparent;
+		border-top:30px solid #00B273;
+		width:0;
+	}
+	.center{
+		margin-left:55px;
+	}
+	.icon{
+		margin:0;
+		position:absolute
+	}
+	.text{
+		color:#fff;
+		display:none;
+		font-size:18px;
+		margin:17px 0 0;
+		position:absolute;
+		text-align:center;
+		width:104px;
+	}
+	.hexagon-in2{
+		background-size:104px 120px;
+	}
+	.hexagon1{
+		height:120px;
+		width:104px;
+	}
+	.img-size{
+		height:60px;
+		width:104;
+	}
+}
+
+/*HEXAGONAL NAVIGATION CSS ENDS*/
+
+
+
+/*CONTENT CSS BEGINS*/
+#container-main {
+	position: relative;
+	margin: 0 auto;
+	width: calc(100%-20px);
+	display: block;
+	max-width: 960px;
+}
+
+.content-card {
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+	padding: 20px 10px;
+	overflow: hidden;
+	width: auto;
+	margin: 10px;
+	max-width: 960px;
+	position: relative;
+	display: block;
+}
+
+.bootfix {
+	padding: 0;
+}
+
+.header{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center bottom;
+	font-family: 'Bree Serif', serif;
+	padding: 10px 40px;
+	letter-spacing: 1px;
+}
+
+.header-heading{
+	position: relative;
+	text-align: center;
+	font-size: 64px;
+	letter-spacing: 3px;
+	color: #383838;
+	background: rgba(255,255,255,0.64);
+	line-height: 1.2;
+	padding-bottom: 15px;
+}
+
+.header-subheading{
+	text-align: center;
+	letter-spacing: 2px;
+	color: #383838;
+	font-size: 24px;
+	margin: 0 0px 10px;
+	font-family: 'Bree Serif', serif;
+}
+
+.sectioner {
+	margin: -20px 0;
+}
+
+.header-byline{
+	position: relative;
+	padding:0 5px;
+	text-align: center;
+	background: rgba(255,255,255,0.64);
+	font-weight: 600;
+}
+
+.content {
+	margin: 10px 0;
+	font-size: 1.3em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	line-height: 1.55;
+	text-align: justify;
+	padding: 0 40px;
+}
+
+.signboard-content {
+	font-family: "Bree Serif", serif;
+	text-align: center;
+	font-size: 20px;
+	width: 100%;
+}
+
+.small-text {
+	font-size: 16px;
+	letter-spacing: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+	.header {
+		padding: 10px 5px;
+	}
+	.content {
+		padding: 0 10px;
+	}
+	.signboard-content {
+		font-size: 16px;
+	}
+}
+
+a span {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.content p {
+	margin: 20px 0px;
+}
+
+.content h1 {
+	font-size: 24px;
+	text-align: left;
+	font-family: 'Bree Serif', serif;
+}
+
+.content h2 {
+	margin: 0px;
+	font-size: 20px;
+	text-align: left;
+	font-family: 'Bree Serif', serif;
+}
+
+.tip {
+	background-color: rgba(255,255,255,0.90);
+	margin: 0 10px 12px;
+	padding: 2px 0;
+}
+
+/*CONTENT CSS ENDS*/
+
+th, td {
+	text-align: center;
+}
